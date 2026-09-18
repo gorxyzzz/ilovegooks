@@ -103,7 +103,7 @@ func main() {
 			CIRCLE_COLOR,
 		)
 		
-		for i := range numLines {
+		for i := range int32(numLines) {
 			angle := float64(i) * math.Pi / float64(numLines)
 
 			offsetX := float32(math.Cos(angle)) * radius
